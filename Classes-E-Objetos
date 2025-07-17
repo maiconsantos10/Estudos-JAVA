@@ -1,15 +1,41 @@
-1. Classe vs Objeto
-Classe é o molde, uma estrutura que define atributos e comportamentos.
+📘 Resumo: Fundamentos da Programação Orientada a Objetos com Java
 
-Objeto é a instância real criada a partir da classe.
+1. Classe vs Objeto
+Classe é o molde, uma estrutura que define atributos e comportamentos. Objeto é a instância real criada a partir da classe.
 
 🧱 Exemplo:
-
-java
-Copiar
-Editar
 class Pessoa {
     String nome;
     int idade;
 }
 Pessoa p1 = new Pessoa(); // objeto
+
+
+2. Valor vs Referência
+Tipos primitivos (int, double, etc.) são passados por valor. Objetos são passados por referência — ou seja, você manipula o mesmo conteúdo original na memória.
+📌 Alterar o conteúdo de um objeto dentro de um método altera o original.
+
+<img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg">
+3. Membros de Classe vs Membros de Instância
+Membros de instância: pertencem ao objeto. Cada objeto tem sua cópia. Membros de classe (static): pertencem à classe. Compartilhados entre todas as instâncias.
+🧱 Exemplo:
+
+static int contador; // pertence à classe
+
+
+4. Palavra-chave this
+Serve para referenciar o próprio objeto atual. Usado comumente para diferenciar parâmetros de atributos.
+🧱 Exemplo:
+
+public void setNome(String nome) {
+    this.nome = nome; // this se refere ao atributo da classe
+}
+
+
+5. Organização das Classes até agora
+Você aprendeu a estruturar classes como:
+• Tarefa
+• Usuario
+• Com métodos de controle (concluir(), adicionarXp(), etc.)
+• E estruturas para exibir dados, validar entradas e interagir com o usuário
+

@@ -1,0 +1,15 @@
+1. Classe vs Objeto
+Classe é o molde, uma estrutura que define atributos e comportamentos.
+
+Objeto é a instância real criada a partir da classe.
+
+🧱 Exemplo:
+
+java
+Copiar
+Editar
+class Pessoa {
+    String nome;
+    int idade;
+}
+Pessoa p1 = new Pessoa(); // objeto

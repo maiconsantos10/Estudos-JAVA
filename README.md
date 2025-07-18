@@ -1,4 +1,4 @@
-![bannerJava](https://br.pinterest.com/pin/1001980617081628276/)
+![bannerJava](https://www.stylus.co.za/wp-content/uploads/2022/12/java-banner.png)
 
 # ☕ Estudos em Java
 

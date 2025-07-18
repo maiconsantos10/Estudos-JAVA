@@ -1,6 +1,6 @@
 # ☕ Estudos em Java
 
-> Repositório criado para acompanhar meu aprendizado em Java, organizado por semanas de estudo.
+> Repositório criado para acompanhar meu aprendizado em Java. Os conteúdos dispostos estão focados na minha Pós em Desenvolvimento de Sistemas com Java.
 
 ## 📅 Organização Semanal
 

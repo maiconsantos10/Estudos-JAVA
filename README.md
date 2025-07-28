@@ -7,7 +7,7 @@
 ## 📅 Organização Semanal
 
 - [Semana 01 - Classes e Objetos](./Classes-E-Objetos)
-- [Semana 02 - Arrays e Coleções](./semana-02)
+- [Semana 02 - Arrays e Coleções](./Arrays-E-Coleções)
 
 
 ## 💻 Tecnologias Utilizadas

@@ -2,4 +2,4 @@
 <img src="https://www.stylus.co.za/wp-content/uploads/2022/12/java-banner.png">
 
 
-- [Representando os lados de um triângulo através de uma classe](./POO)
+- [Representando os lados de um triângulo através de uma classe](./ladosDeUmTriangulo)

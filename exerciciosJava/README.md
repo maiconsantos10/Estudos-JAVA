@@ -8,6 +8,6 @@
 
 
 > Introdução à Programação Orientada a Objetos
-- [1.Representando os lados de um triângulo através de uma classe](./ladosDeUmTriangulo)
-- [2.Adicionando e removendo produtos de um estoque](./estoqueEQuantidade)
+- [1.🔺 Representando os lados de um triângulo através de uma classe](./ladosDeUmTriangulo)
+- [2.🛒 Adicionando e removendo produtos de um estoque](./estoqueEQuantidade)
 

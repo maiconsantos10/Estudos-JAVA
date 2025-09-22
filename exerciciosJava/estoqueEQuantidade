@@ -1,0 +1,69 @@
+1. Adicionando e removendo produtos de um estoque
+
+src/main/java/entities/Product.java
+|-> Product.java
+
+package entities;
+
+// Esta classe representa um produto com nome, preço e quantidade em estoque
+public class Product {
+    public String name;
+    public double price;
+    public int quantity;
+
+    // Este método calcula o valor total em estoque
+    public double totalValueInStock() {
+        return price * quantity;
+    }
+
+    // Este método adiciona produtos ao estoque
+    public void addProducts(int quantity) {
+        // Incrementa a quantidade de produtos em estoque
+        this.quantity += quantity;
+        /*  'this' refere-se ao atributo da instância atual, 
+        diferenciando-o do parâmetro*/
+    }
+
+    public void removeProducts(int quantity) {
+        // Decrementa a quantidade de produtos em estoque
+        this.quantity -= quantity;
+    }
+}
+
+src/main/java/Program.java
+|-> Program.java
+
+import java.util.Scanner;
+
+// Importação da classe Product do pacote entities
+import entities.Product;
+
+public class Program {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        // Instanciação de um objeto da classe Product
+        Product product = new Product();
+        System.out.println("Enter product data:");
+        
+        // Leitura dos dados do produto
+        System.out.print("Name: ");
+        product.name = sc.nextLine();
+        
+        // Leitura do preço do produto
+        System.out.println("Price: ");
+        product.price = sc.nextDouble();
+        
+        // Leitura da quantidade em estoque do produto
+        System.out.println("Quantity in stock: ");
+        product.quantity = sc.nextInt();
+
+
+        // Exibição dos dados do produto
+        System.out.println("Enter Product data: " + product.name + ", Product value: " + "$" + product.price 
+        + ", Quantity in stock: "+ product.quantity);
+
+        sc.close();
+    }
+}

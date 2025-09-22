@@ -1,0 +1,123 @@
+# Arrays em Java
+
+## 📘 Resumo - Arrays e Coleções
+
+### 🔹 O que é um Array?
+Um **array** é uma estrutura que armazena múltiplos valores do mesmo tipo em uma única variável, acessados por índice.
+
+```java
+int[] numeros = new int[5]; // array de 5 posições
+```
+
+- Índices começam em `0`
+- Tamanho fixo após a criação
+- Acesso: `numeros[0]`, `numeros[1]`, etc.
+
+---
+
+### 🔹 Como declarar e inicializar
+
+```java
+String[] nomes = new String[3];
+nomes[0] = "Maicon";
+nomes[1] = "Reformed";
+nomes[2] = "Dev";
+
+int[] valores = {10, 20, 30}; // forma reduzida
+```
+
+---
+
+### 🔹 Como percorrer (for e for-each)
+
+```java
+for (int i = 0; i < valores.length; i++) {
+    System.out.println(valores[i]);
+}
+
+for (int v : valores) {
+    System.out.println(v);
+}
+```
+
+---
+
+### 🔹 Arrays multidimensionais (matrizes)
+
+```java
+int[][] matriz = new int[2][3];
+matriz[0][1] = 5;
+```
+
+---
+
+### 🔹 Limitações
+- Tamanho fixo
+- Sem métodos nativos de manipulação
+- Para estruturas dinâmicas: use `ArrayList`
+
+---
+
+## 🧪 Exercícios Práticos
+
+### ✅ Exercício 1: Imprimir nomes
+
+```java
+public class TesteNomes {
+    public static void main(String[] args) {
+        String[] nomes = {"Lucas", "Maicon", "Ana"};
+
+        for (int i = 0; i < nomes.length; i++) {
+            System.out.println("Nome " + (i + 1) + ": " + nomes[i]);
+        }
+    }
+}
+```
+
+---
+
+### ✅ Exercício 2: Soma de elementos
+
+```java
+public class SomaArray {
+    public static void main(String[] args) {
+        int[] numeros = {10, 20, 30, 40};
+        int soma = 0;
+
+        for (int n : numeros) {
+            soma += n;
+        }
+
+        System.out.println("Soma total: " + soma);
+    }
+}
+```
+
+---
+
+### ✅ Exercício 3: Maior valor
+
+```java
+public class MaiorNumero {
+    public static void main(String[] args) {
+        int[] numeros = {7, 14, 21, 3, 18};
+        int maior = numeros[0];
+
+        for (int n : numeros) {
+            if (n > maior) {
+                maior = n;
+            }
+        }
+
+        System.out.println("Maior número: " + maior);
+    }
+}
+```
+
+---
+
+## 🎯 Desafio Extra
+Implemente um programa que:
+- Pergunte quantos alunos deseja registrar
+- Leia os nomes e armazene em um array
+- Imprima todos ao final

@@ -24,9 +24,16 @@ public class Product {
         diferenciando-o do parâmetro*/
     }
 
+    // Este método remove produtos do estoque
     public void removeProducts(int quantity) {
         // Decrementa a quantidade de produtos em estoque
         this.quantity -= quantity;
+    }
+
+    // Este método retorna uma representação em string do produto
+    public String toString() {
+        // String.format("%.2f", price) formata o número para duas casas decimais"
+        return "Product: " + name + ", Price: $" + String.format("%.2f", price) + ", " + quantity + " units, Total: $ " + String.format("%.2f", totalValueInStock()); 
     }
 }
 
@@ -58,11 +65,11 @@ public class Program {
         // Leitura da quantidade em estoque do produto
         System.out.println("Quantity in stock: ");
         product.quantity = sc.nextInt();
-
-
+        
         // Exibição dos dados do produto
-        System.out.println("Enter Product data: " + product.name + ", Product value: " + "$" + product.price 
-        + ", Quantity in stock: "+ product.quantity);
+        System.out.println(product.toString());
+
+        //System.out.println(product);
 
         sc.close();
     }

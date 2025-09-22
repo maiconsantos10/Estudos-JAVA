@@ -9,5 +9,5 @@
 
 > Introdução à Programação Orientada a Objetos
 - [Representando os lados de um triângulo através de uma classe](./ladosDeUmTriangulo)
-  
+- [Adicionando e removendo produtos de um estoque](./estoqueEQuantidade)
 

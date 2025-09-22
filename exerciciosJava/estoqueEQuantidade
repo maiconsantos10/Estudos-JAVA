@@ -50,26 +50,43 @@ public class Program {
         
         Scanner sc = new Scanner(System.in);
 
-        // Instanciação de um objeto da classe Product
-        Product product = new Product();
+        Product product = new Product(); // Instanciação de um objeto da classe Product
         System.out.println("Enter product data:");
         
-        // Leitura dos dados do produto
-        System.out.print("Name: ");
+        System.out.print("Name: "); // Leitura dos dados do produto
         product.name = sc.nextLine();
         
-        // Leitura do preço do produto
-        System.out.println("Price: ");
+        System.out.println("Price: "); // Leitura do preço do produto
         product.price = sc.nextDouble();
         
-        // Leitura da quantidade em estoque do produto
-        System.out.println("Quantity in stock: ");
+        System.out.println("Quantity in stock: "); // Leitura da quantidade em estoque do produto
         product.quantity = sc.nextInt();
-        
+
         // Exibição dos dados do produto
         System.out.println(product.toString());
 
-        //System.out.println(product);
+        System.out.println("Quantity to add in stock: ");
+        int quantity = sc.nextInt(); 
+        product.addProducts(quantity); // Adiciona produtos ao estoque
+        
+        // Exibição dos dados do produto
+        System.out.println("Updated value: " + product.toString());
+
+        System.out.println("Do you want to remove products from stock? ");
+        // Lê a resposta do usuário, considerando o primeiro caractere
+        char response = sc.next().charAt(0); 
+        if (response == 'y' || response == 'Y' || response == 's' || 
+            response == 'S' || response == 't' || response == 'T') {
+            System.out.println("Quantity to remove from stock: ");
+            quantity = sc.nextInt();
+            product.removeProducts(quantity); // Remove produtos do estoque
+            // Exibição dos dados do produto
+        } else {
+            System.out.println("No products were removed from stock.");
+        } 
+        
+        // Exibição dos dados do produto
+        System.out.println("Updated value: " + product.toString());
 
         sc.close();
     }

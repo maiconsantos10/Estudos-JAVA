@@ -1,0 +1,68 @@
+*INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS*
+
+1. Criando uma classe com três atributos para representar um triângulo
+
+src/main/java/entities
+|---> Triangle.java
+
+package.entities;
+
+public class Triangle {
+  public double a;
+  public double b;
+  public double c;
+}
+
+
+src/main/java/application/
+|---> Program.java
+
+package application;
+
+import java.util.Scanner;
+
+import entities.Triangle;
+
+public class Program {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        Triangle x, y;
+        // Instanciando os objetos x e y
+        x = new Triangle();
+        y = new Triangle();
+
+        // Declarando as variáveis para armazenar as medidas dos triângulos X
+        System.out.println("Enter the measures of triangle X: ");
+        x.a = sc.nextDouble();
+        x.b = sc.nextDouble();
+        x.c = sc.nextDouble();
+
+        // Declarando as variáveis para armazenar as medidas dos triângulos Y
+        System.out.println("Enter the measures of triangle Y: ");
+        y.a = sc.nextDouble();
+        y.b = sc.nextDouble();
+        y.c = sc.nextDouble();
+
+
+        double p = (x.a + x.b + x.c) / 2.0;
+        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+
+        p = (y.a + y.b + y.c) / 2.0;
+        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+
+        System.out.printf("Area of triangle X: %.4f%n", areaX);
+        System.out.printf("Area of triangle Y: %.4f%n", areaY);
+
+        if (areaX > areaY) {
+            System.out.println("Larger area: X");
+        } else {
+            System.out.println("Larger area: Y");
+        }
+
+        
+
+        sc.close();
+    }
+}
+

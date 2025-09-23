@@ -18,12 +18,14 @@
     
 ---
     
+    
     import java.util.Scanner;
     
     import entities.Funcionario;
     
     public class Program {
         public static void main(String[] args) {
+            
             
             Scanner sc = new Scanner(System.in);
     
@@ -44,15 +46,14 @@
             }  
     
             
-    
            System.out.println("Salário líquido atual: " + String.format("%.2f", salario.salarioLiquido()));
     
-           System.out.println("Qual o aumento salarial em porcentagem? ");
            salario.aumentarSalario(10.0); 
-    
+           System.out.println("Reajuste de 10% concedido!");
            System.out.println("Salário líquido atualizado: " + String.format("%.2f", salario.salarioLiquido()));
     
     
             sc.close();
         }
     }
+    

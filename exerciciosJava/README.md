@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://www.stylus.co.za/wp-content/uploads/2022/12/java-banner.png"> </img>
+  <img src="https://media1.tenor.com/m/w7ThV57JRLkAAAAC/luffy.gif"> </img>
 </div> <br> <br>
 
 

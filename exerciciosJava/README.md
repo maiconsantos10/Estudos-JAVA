@@ -11,3 +11,4 @@
 - [1.🔺 Representando os lados de um triângulo através de uma classe](./ladosDeUmTriangulo.md)
 - [2.🛒 Adicionando e removendo produtos de um estoque](./estoqueEQuantidade.md)
 - [3.▭  Calculando o perímetro, área e diagonal de um retângulo](./ladosDeUmRetangulo.md)
+- [4.💵 Calculando o salário, imposto e acréscimo de um funcionário](./salarioFuncionario.md)

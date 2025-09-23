@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://media1.tenor.com/m/w7ThV57JRLkAAAAC/luffy.gif"> </img>
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnh1OXdid3F3cnVsYjRnbmRldnpsaGVkeTl4amc3ZWN3ZmN6bG52ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/G4WadRySq8IROWOLwc/giphy.gif"> </img>
 </div> <br> <br>
 
 

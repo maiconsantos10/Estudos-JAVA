@@ -1,8 +1,5 @@
 <img src="https://study.com/cimages/multimages/16/222224971011527207636336.jpg">
 
-src/main/java/entities/Rectangle.java
-
-
     package entities;
 
     public class Rectangle {
@@ -26,7 +23,7 @@ src/main/java/entities/Rectangle.java
       }
 
 
-src/main/java/Program.java
+- - -
 
     import java.util.Scanner;
 
